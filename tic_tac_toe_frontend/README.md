@@ -1,82 +1,52 @@
-# Lightweight React Template for KAVIA
+# Tic Tac Toe Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A modern, minimalistic React-based Tic Tac Toe game for two players. Features PvP mode, in-memory score tracking, win highlighting, and a clean light theme.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Start New Game:** Resets board and score.
+- **Player vs Player:** Two players, local play.
+- **Game Board:** Centered, 3x3 grid, large buttons.
+- **Winning Highlight:** Winning line and winner indicator.
+- **In-memory Score:** Tracks X, O, and Draws.
+- **Restart Round:** Resets board, keeps score.
+- **Modern Light-themed UI:** Colors based on palette.
 
-## Getting Started
+### Color Palette
 
-In the project directory, you can run:
+- **Primary:** #3498db
+- **Secondary:** #2ecc71
+- **Accent:** #e74c3c
 
-### `npm start`
+## Layout
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Game title at the top
+- Centered board
+- Controls and scoreboard below
+- Minimal footer
 
-### `npm test`
+## How to Run
 
-Launches the test runner in interactive watch mode.
+1. In this directory, run:
 
-### `npm run build`
+```
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## File Structure
+
+- `src/App.js` — Main game component (board, logic, score, controls)
+- `src/App.css` — All custom styles for board, controls, etc.
+- `src/index.js` — Application entry point
 
 ## Customization
 
-### Colors
+- Adjust color palette in `App.css` root.
+- All styles are modular and minimal, with responsive layout for mobile.
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+---
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy your game!
